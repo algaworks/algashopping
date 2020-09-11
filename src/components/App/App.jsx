@@ -1,43 +1,49 @@
-import React, { useEffect, useState } from 'react'
-import Checkbox from '../../shared/Checkbox'
+import React, { useState, useEffect } from 'react'
 import LineChart from '../../shared/LineChart'
 import AppContainer from '../AppContainer/AppContainer'
 import AppHeader from '../AppHeader'
+import ShoppingList from '../ShoppingList'
 import { Wrapper, Container } from './App.styles'
+import productsMock from '../../mocks/products.json'
 
 function App () {
-  const [lettuce, setLettuce] = useState(true)
-  const [rice, setRice] = useState(false)
-
   const colors = ['#62CBC6', '#00ABAD', '#00858C', '#006073', '#004D61']
+
+  const [products, setProducts] = useState(productsMock.products)
+  const [selectedProducts, setSelectedProducts] = useState([])
+
+  useEffect(() => {
+    const newSelectedProducts = products
+      .filter(product => product.checked)
+    
+    setSelectedProducts(newSelectedProducts)
+  }, [products])
+
+  function handleToggle (id, checked, name) {
+    const newProducts = products.map(product =>
+        product.id === id
+          ? { ...product, checked: !product.checked }
+          : product
+    )
+    setProducts(newProducts)
+  }
 
   return <Wrapper>
     <Container>
       <AppHeader />
       <AppContainer
-        left={<div>
-          produtos disponiveis:
-
-          <Checkbox
-            value={lettuce}
-            title="Alface"
-            onClick={() => setLettuce(!lettuce)}
-          />
-          <Checkbox
-            value={rice}
-            title="Arroz"
-            onClick={() => setRice(!rice)}
-          />
-        </div>}
-        middle={<div>
-          sua lista de compras
-
-          <Checkbox
-            value={rice}
-            title="Arroz"
-            onClick={() => setRice(!rice)}
-          />
-        </div>}
+        left={
+          <ShoppingList
+            title="Produtos disponíveis"
+            products={products}
+            onToggle={handleToggle}
+          />}
+        middle={
+          <ShoppingList
+            title="Sua lista de compras"
+            products={selectedProducts}
+            onToggle={handleToggle}
+          />}
         right={<div>
           estatisticas
 

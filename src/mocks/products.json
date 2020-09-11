@@ -1,0 +1,551 @@
+{
+  "products": [
+      {
+          "id": "9d08c3d5-1960-5445-98b7-51fa4fcbadaa",
+          "type": "item",
+          "name": "Água oxigenada",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "219a1932-72c4-572f-805c-5a4f3e3fbd62",
+          "type": "item",
+          "name": "Água Sanitária",
+          "checked": false,
+          "price": 5.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "64b9bd06-d917-54e7-8eb0-08acd06a0057",
+          "type": "item",
+          "name": "Álcool em gel",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "95a0ff32-fb05-5d71-9fea-bb65ce688881",
+          "type": "item",
+          "name": "Algodão",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "530aca30-a042-5a16-a790-c940a0c272c3",
+          "type": "item",
+          "name": "Amaciante",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "55749b84-1bde-56b4-b913-a63109b32b66",
+          "type": "item",
+          "name": "Arroz",
+          "checked": false,
+          "price": 11.99,
+          "tags": [
+              "food",
+              "healthy"
+          ]
+      },
+      {
+          "id": "15ececf5-45d1-523d-8e70-6918402e71f7",
+          "type": "item",
+          "name": "Açúcar mascavo",
+          "checked": false,
+          "price": 4.99,
+          "tags": [
+              "condiment",
+              "healthy"
+          ]
+      },
+      {
+          "id": "4b305e7c-60fd-57fb-bab5-8c67b4b88a83",
+          "type": "item",
+          "name": "Barbeador",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "86ab8df1-b9df-54a8-a733-2782039e1993",
+          "type": "item",
+          "name": "Biscoitos",
+          "checked": false,
+          "price": 2.99,
+          "tags": [
+              "food",
+              "junk"
+          ]
+      },
+      {
+          "id": "25390c27-8a15-595c-9ecc-47ff8ba3a578",
+          "type": "item",
+          "name": "Café",
+          "checked": false,
+          "price": 4.99,
+          "tags": [
+              "healthy",
+              "grain"
+          ]
+      },
+      {
+          "id": "8dbb3bd2-9bb6-53ba-8825-1adfd7b0f998",
+          "type": "item",
+          "name": "Carré",
+          "checked": false,
+          "price": 20,
+          "tags": [
+              "food",
+              "healthy",
+              "meat"
+          ]
+      },
+      {
+          "id": "ddc09660-bc70-52e2-a553-a4eeb94bbfe6",
+          "type": "item",
+          "name": "Condicionador",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "hygiene"
+          ]
+      },
+      {
+          "id": "6b03e468-3776-510e-80e5-5ef8e337cbc3",
+          "type": "item",
+          "name": "Cotonetes",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "hygiene"
+          ]
+      },
+      {
+          "id": "68c05731-3e39-50ca-a297-ceca6a358e29",
+          "type": "item",
+          "name": "Creme dental",
+          "checked": false,
+          "price": 7.99,
+          "tags": [
+              "hygiene"
+          ]
+      },
+      {
+          "id": "46b48821-53cf-5045-aaa0-0500a3552c63",
+          "type": "item",
+          "name": "Curativos",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "health"
+          ]
+      },
+      {
+          "id": "1a3914f7-8c4d-578f-8a52-92445e506880",
+          "type": "item",
+          "name": "Desinfetante",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "3165976b-3a58-5645-8c35-0b1b50251711",
+          "type": "item",
+          "name": "Desodorante",
+          "checked": false,
+          "price": 11.99,
+          "tags": [
+              "hygiene"
+          ]
+      },
+      {
+          "id": "0fc54c08-eddf-5c84-a67a-39d4dcfe3ad7",
+          "type": "item",
+          "name": "Detergente",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "3b75cfc9-4b34-527b-b94f-69a74b84e657",
+          "type": "item",
+          "name": "Escova de dente",
+          "checked": false,
+          "price": 21.99,
+          "tags": [
+              "hygiene"
+          ]
+      },
+      {
+          "id": "178b1a25-9f3e-55cc-bd73-1677d9881dca",
+          "type": "item",
+          "name": "Esparadrapo",
+          "checked": false,
+          "price": 10.99,
+          "tags": [
+              "health"
+          ]
+      },
+      {
+          "id": "56b561d2-a689-5857-88ad-a4b438214247",
+          "type": "item",
+          "name": "Esponja de aço",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "7d5d4422-36b1-5c9c-8b01-56066ab54a49",
+          "type": "item",
+          "name": "Esponja de pia",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "8dc3c828-99f5-525c-bd69-4e361d523c18",
+          "type": "item",
+          "name": "Farinha",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "grain"
+          ]
+      },
+      {
+          "id": "6630820d-8298-5bed-aa91-348446e25910",
+          "type": "item",
+          "name": "Feijão",
+          "checked": false,
+          "price": 9.99,
+          "tags": [
+              "food",
+              "grain",
+              "healthy"
+          ]
+      },
+      {
+          "id": "6a5fd99f-bbe8-52d8-9818-09df61162d73",
+          "type": "item",
+          "name": "Fermento",
+          "checked": false,
+          "price": 3.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "e2e9746c-97fb-59d6-a633-fa9db272579e",
+          "type": "item",
+          "name": "Fio dental",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "hygiene"
+          ]
+      },
+      {
+          "id": "a59c0e87-0694-59d7-bac1-55ed089ba8d2",
+          "type": "item",
+          "name": "Flanelas",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "d7ca0ff2-a9c7-5160-b82a-c0cf39f9bf9b",
+          "type": "item",
+          "name": "Fósforo",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "82c42424-abce-54dd-87c4-9033442af33b",
+          "type": "item",
+          "name": "Gaze",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "health"
+          ]
+      },
+      {
+          "id": "59148528-6fbc-5f5f-a8b0-0fe4fb6dd500",
+          "type": "item",
+          "name": "Guardanapo de papel",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "1d673427-57dd-5b22-a13c-679208429cf6",
+          "type": "item",
+          "name": "Inseticida",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "63318369-2435-585f-af08-c8f602c33145",
+          "type": "item",
+          "name": "Iogurte",
+          "checked": false,
+          "price": 3.89,
+          "tags": [
+              "food",
+              "junk"
+          ]
+      },
+      {
+          "id": "5dc19f23-9d4c-568d-8efd-1818ddb687bd",
+          "type": "item",
+          "name": "Leite",
+          "checked": false,
+          "price": 2.99,
+          "tags": [
+              "healthy",
+              "liquid"
+          ]
+      },
+      {
+          "id": "d80ba64d-bd43-505a-936a-781c5f7f556a",
+          "type": "item",
+          "name": "Lustra-móveis",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "bcf692df-2be1-5d16-bb75-7dd21323bb8e",
+          "type": "item",
+          "name": "Luvas plásticas",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "d2b4dadf-48f8-5ed2-be3f-de7f1a68b75f",
+          "type": "item",
+          "name": "Lâmpadas",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "d456e98a-e543-5780-8f13-82e7a3ecbe44",
+          "type": "item",
+          "name": "Macarrão",
+          "checked": false,
+          "price": 1.89,
+          "tags": [
+              "food",
+              "junk"
+          ]
+      },
+      {
+          "id": "d71e6c20-e4fa-56fb-94b2-898656ffd168",
+          "type": "item",
+          "name": "Margarina",
+          "checked": false,
+          "price": 7.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "6fb55fc3-eca0-5b57-b2d5-07df4bd1392d",
+          "type": "item",
+          "name": "Molho de tomate",
+          "checked": false,
+          "price": 0.99,
+          "tags": [
+              "condiment",
+              "food",
+              "healthy"
+          ]
+      },
+      {
+          "id": "29a0d1fb-ff2b-591e-9710-0c136d926286",
+          "type": "item",
+          "name": "Ovos",
+          "checked": false,
+          "price": 6.99,
+          "tags": [
+              "food",
+              "healthy"
+          ]
+      },
+      {
+          "id": "07538988-dfd5-583d-94fa-d8a9b2037884",
+          "type": "item",
+          "name": "Óleo",
+          "checked": false,
+          "price": 0.99,
+          "tags": [
+              "condiment"
+          ]
+      },
+      {
+          "id": "f350f1fd-d5fb-5de8-b633-a8d4d8965a7a",
+          "type": "item",
+          "name": "Papel Alumínio",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "ffe57bf2-3af8-58d9-bee9-f5a6b2684147",
+          "type": "item",
+          "name": "Papel Filme",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "340503f0-c3f9-5cc3-9194-fc53dff4bfb3",
+          "type": "item",
+          "name": "Papel higiênico",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "hygiene"
+          ]
+      },
+      {
+          "id": "9884cac2-f501-5c46-b4e5-30c75a6e9ff7",
+          "type": "item",
+          "name": "Papel toalha",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "others"
+          ]
+      },
+      {
+          "id": "f722bb67-907f-5fe4-8cf0-94ca37a8331f",
+          "type": "item",
+          "name": "Pães",
+          "checked": false,
+          "price": 0.5,
+          "tags": [
+              "food",
+              "junk"
+          ]
+      },
+      {
+          "id": "0119d6ab-56f4-5da9-89cc-8146744b85ff",
+          "type": "item",
+          "name": "Queijo ralado",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "condiment",
+              "junk"
+          ]
+      },
+      {
+          "id": "b1b58f97-43a2-53ad-9729-9491e9fa0999",
+          "type": "item",
+          "name": "Sabonete",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "hygiene"
+          ]
+      },
+      {
+          "id": "e394ce24-442f-5942-812f-68a86108bd4b",
+          "type": "item",
+          "name": "Sabão em barra",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "3d2284fd-d7aa-5ee0-8f60-5b19c96407f5",
+          "type": "item",
+          "name": "Sabão em pó",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "b3cfdffd-e305-593f-8995-bdd0d1f2ee5f",
+          "type": "item",
+          "name": "Sacos de lixo",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "cleaning"
+          ]
+      },
+      {
+          "id": "cc53421f-2bb1-59f2-a4c9-05afde2a51d4",
+          "type": "item",
+          "name": "Sal",
+          "checked": false,
+          "price": 18.99,
+          "tags": [
+              "condiment",
+              "healthy"
+          ]
+      },
+      {
+          "id": "3c009cef-88ef-5340-ad56-6846ded83968",
+          "type": "item",
+          "name": "Shampoo",
+          "checked": false,
+          "price": 1.99,
+          "tags": [
+              "hygiene"
+          ]
+      }
+  ]
+}
