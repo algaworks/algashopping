@@ -5,6 +5,7 @@ import ShoppingList from "../../components/ShoppingList";
 import { Wrapper, Container, Content, Column } from "./styles";
 import productsMock from "../../mocks/products.json";
 import extractPercentage from "../../utils/extractPercentage";
+import Calculator from "../../components/Calculator";
 
 interface ProductProps {
   price: number;
@@ -119,6 +120,8 @@ const Home = () => {
                   currency: "BRL",
                 })}
               </div>
+
+              <Calculator />
             </div>
           </Column>
         </Content>
