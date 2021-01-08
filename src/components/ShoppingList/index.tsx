@@ -1,6 +1,8 @@
 import React from "react";
 import { Wrapper, Title, Array } from "./styles";
 import Checkbox from "../../shared/Checkbox";
+import { useSelector } from "react-redux";
+import { selectAllProducts } from "../../store/products/selectors";
 
 interface LayoutProps {
   title?: string;
@@ -14,6 +16,12 @@ interface LayoutProps {
 
 const ShoppingList: React.FC<LayoutProps> = (props) => {
   const { title, products, onToggle } = props;
+
+  // const productsFromRedux = useSelector(selectAllProducts);
+
+  // useEffect(() => {
+  //   console.log(productsFromRedux);
+  // }, [productsFromRedux]);
 
   return (
     <Wrapper>

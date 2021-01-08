@@ -1,52 +1,44 @@
 import React, { useState, useEffect } from "react";
-import LineChart from "../../shared/LineChart";
-import Header from "../../components/Header";
+import { useDispatch, useSelector } from "react-redux";
+
+// Components
 import ShoppingList from "../../components/ShoppingList";
-import { Wrapper, Container, Content, Column } from "./styles";
-import productsMock from "../../mocks/products.json";
-import extractPercentage from "../../utils/extractPercentage";
 import Calculator from "../../components/Calculator";
+import Header from "../../components/Header";
+
+// Shared
+import LineChart from "../../shared/LineChart";
+
+// Store
+import { toggleProduct } from "../../store/products/actions";
+import {
+  selectAllProducts,
+  selectSelectedProducts,
+  selectSelectedProductTotalPrice,
+} from "../../store/products/selectors";
+
+// Utils
+import extractPercentage from "../../utils/extractPercentage";
+
+// Private
+import { Wrapper, Container, Content, Column } from "./styles";
 
 interface ProductProps {
   price: number;
   tags: Array<string>;
 }
 
-interface SelectedProps {
-  id: string;
-  type: string;
-  name: string;
-  checked: boolean;
-  price: number;
-  tags: string[];
-}
-
-const Home = () => {
+const Home: React.FC = () => {
   const colors = ["#62CBC6", "#00ABAD", "#00858C", "#006073", "#004D61"];
 
-  const [products, setProducts] = useState(productsMock.products);
-  const [selectedProducts, setSelectedProducts] = useState<SelectedProps[]>([]);
-  const [totalPrice, setTotalPrice] = useState(0);
+  const dispatch = useDispatch();
 
-  useEffect(() => {
-    const newSelectedProducts = products.filter((product) => product.checked);
+  const totalPrice = useSelector(selectSelectedProductTotalPrice);
+  const selectedProducts = useSelector(selectSelectedProducts);
+  const products = useSelector(selectAllProducts);
 
-    setSelectedProducts(newSelectedProducts);
-  }, [products]);
-
-  useEffect(() => {
-    const total = selectedProducts
-      .map((product: ProductProps) => product.price)
-      .reduce((a, b) => a + b, 0);
-
-    setTotalPrice(total);
-  }, [selectedProducts]);
-
-  const handleToggle = (id: string, checked: boolean, name: string) => {
-    const newProducts = products.map((product) =>
-      product.id === id ? { ...product, checked: !product.checked } : product
-    );
-    setProducts(newProducts);
+  const handleToggle = (id: string) => {
+    dispatch(toggleProduct(id));
   };
 
   return (
@@ -81,7 +73,7 @@ const Home = () => {
             />
             <LineChart
               color={colors[1]}
-              title="nao tao saudável"
+              title="não tão saudável"
               percentage={extractPercentage(
                 selectedProducts.length,
                 selectedProducts.filter((product: ProductProps) =>
