@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 // Components
@@ -12,7 +12,6 @@ import LineChart from "../../shared/LineChart";
 // Store
 import { toggleProduct } from "../../store/products/actions";
 import {
-  selectAllProducts,
   selectSelectedProducts,
   selectSelectedProductTotalPrice,
 } from "../../store/products/selectors";
@@ -35,7 +34,6 @@ const Home: React.FC = () => {
 
   const totalPrice = useSelector(selectSelectedProductTotalPrice);
   const selectedProducts = useSelector(selectSelectedProducts);
-  const products = useSelector(selectAllProducts);
 
   const handleToggle = (id: string) => {
     dispatch(toggleProduct(id));
@@ -47,16 +45,12 @@ const Home: React.FC = () => {
         <Header />
 
         <Content>
-          <ShoppingList
-            title="Produtos disponíveis"
-            products={products}
-            onToggle={handleToggle}
-          />
+          <ShoppingList title="Produtos disponíveis" onToggle={handleToggle} />
 
           <ShoppingList
-            title="Sua lista de compras"
-            products={selectedProducts}
+            displayOnlySelected
             onToggle={handleToggle}
+            title="Sua lista de compras"
           />
 
           <Column>

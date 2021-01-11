@@ -2,32 +2,35 @@ import React from "react";
 import { Wrapper, Title, Array } from "./styles";
 import Checkbox from "../../shared/Checkbox";
 import { useSelector } from "react-redux";
-import { selectAllProducts } from "../../store/products/selectors";
+import {
+  selectAllProducts,
+  selectSelectedProducts,
+} from "../../store/products/selectors";
 
 interface LayoutProps {
   title?: string;
   onToggle?: any;
-  products?: Array<{
-    id?: string;
-    name?: string;
-    checked?: boolean;
-  }>;
+  displayOnlySelected?: boolean;
+}
+
+interface ProductProps {
+  id?: string;
+  name?: string;
+  checked?: boolean;
 }
 
 const ShoppingList: React.FC<LayoutProps> = (props) => {
-  const { title, products, onToggle } = props;
+  const { title, onToggle, displayOnlySelected } = props;
 
-  // const productsFromRedux = useSelector(selectAllProducts);
-
-  // useEffect(() => {
-  //   console.log(productsFromRedux);
-  // }, [productsFromRedux]);
+  const products = useSelector(
+    displayOnlySelected ? selectSelectedProducts : selectAllProducts
+  );
 
   return (
     <Wrapper>
       <Title>{title}:</Title>
       <Array>
-        {products?.map((product) => (
+        {products?.map((product: ProductProps) => (
           <Checkbox
             key={product.id}
             title={product.name}
